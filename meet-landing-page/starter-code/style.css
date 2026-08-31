@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* css reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* font family*/
+    --ff-redhat: 'Red Hat Display', sans-serif;
+
+    /* font weight */
+    --fw-medium: 500;
+    --fw-black: 900;
+
+    /* font size */
+    --fs-200: 16px;
+    --fs-250: 18px;
+    --fs-500: 40px;
+    --fs-800: 64px;
+
+    /* line height */
+    --lh-110: 110%;
+    --lh-150: 150%;
+
+    /* spacing */
+    --sp-1400: 112px;
+    --sp-1000: 80px;
+    --sp-900: 72px;
+    --sp-800: 64px;
+    --sp-700: 56px;
+    --sp-500: 40px;
+    --sp-400: 32px;
+    --sp-300: 24px;
+    --sp-200: 16px;
+    --sp-100: 8px;
+    --sp-50: 4px;
+
+    /* colors */
+    --clr-cyan-600: hsl(192, 37%, 48%);
+    --clr-cyan-300: hsl(192, 90%, 77%);
+    --clr-purple-600: hsl(268, 34%, 53%);
+    --clr-purple-300: hsl(268, 100%, 86%);
+    --clr-slate-900: hsl(240, 21%, 53%);
+    --clr-slate-600: hsl(240, 10%, 57%);
+    --clr-slate-300: hsl(240, 18%, 85%);
+    --clr-white: hsl(0, 0%, 98%)
+
+}
+
+body {
+    font-family: var(--ff-redhat);
+    font-size: var(--fs-200);
+    line-height: var(--lh-150);
+}
