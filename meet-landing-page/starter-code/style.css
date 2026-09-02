@@ -206,12 +206,8 @@ footer h2 {
     margin-inline: calc(50% - 57.5vw);
 }
 
-.cyan-version {
-    color: var(--clr-cyan-300);
-}
-
-.purple-version {
-    color: var(--clr-purple-300);
+.version {
+    color: hsl(0 0% 100% / 0.5);
 }
 
 .hero-side {
@@ -314,6 +310,14 @@ footer h2 {
         align-items: center;
         justify-content: space-between;
         gap: var(--sp-500);
+    }
+
+    .cyan-btn:hover {
+        background-color: var(--clr-cyan-300);
+    }
+
+    .purple-btn:hover {
+        background-color: var(--clr-purple-300);
     }
 
 }
