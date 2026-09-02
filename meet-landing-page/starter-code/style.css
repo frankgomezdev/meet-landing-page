@@ -16,10 +16,13 @@
 
     /* font size */
     --fs-100: 12px;
+    --fs-150: 14px;
     --fs-200: 16px;
     --fs-250: 18px;
     --fs-400: 32px;
+    --fs-450: 36px;
     --fs-500: 40px;
+    --fs-600: 48px;
     --fs-800: 64px;
 
     /* line height */
@@ -51,6 +54,9 @@
 
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     font-family: var(--ff-redhat);
@@ -125,6 +131,7 @@ footer {
     align-items: center;
     gap: var(--sp-300);
     margin-block-start: -28px;
+    align-self: stretch;
 }
 
 footer h2 {
@@ -148,7 +155,7 @@ footer h2 {
     align-items: center;
 }
 
-.blue-btn {
+.cyan-btn {
     background-color: var(--clr-cyan-600);
 }
 
@@ -199,6 +206,114 @@ footer h2 {
     margin-inline: calc(50% - 57.5vw);
 }
 
-.version {
+.cyan-version {
     color: var(--clr-cyan-300);
+}
+
+.purple-version {
+    color: var(--clr-purple-300);
+}
+
+.hero-side {
+    display: none;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-500);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: var(--fs-600);
+        max-width: 350px;
+    }
+
+    h2 {
+        font-size: var(--fs-450);
+    }
+
+    main > h2 {
+        max-width: 450px;
+    }
+
+    footer {
+        background-image:
+        linear-gradient(hsl(192, 37%, 48%, 0.8), hsl(192, 37%, 48%, 0.8)),
+        url("/meet-landing-page/starter-code/assets/tablet/image-footer.jpg");
+    }
+
+    .hero-img {
+        width: 105vw;
+        margin-inline: calc(50% - 52.5vw);
+    }
+
+    .hero-btns {
+        flex-direction: row;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .overline {
+        font-size: var(--fs-150);
+    }
+
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding-inline: var(--sp-1400);
+    }
+
+    h1 {
+        font-size: var(--fs-800);
+        max-width: 800px;
+    }
+
+    h2 {
+        font-size: var(--fs-500);
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        padding-inline: var(--sp-1400);
+        padding-block: var(--sp-1400);
+        
+    }
+
+    footer > h2 {
+        max-width: 350px;
+    }
+
+    footer > p {
+        max-width: 340px;
+    }
+
+    .overline {
+        font-size: var(--fs-200);
+    }
+    
+    .hero-img {
+        display: none;
+    }
+
+    .hero-side {
+        display: block;
+    }
+    
+    .hero {
+        display: flex;
+        width: 100vw;
+        margin-inline: calc(50% - 50vw);
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--sp-500);
+    }
+
 }
